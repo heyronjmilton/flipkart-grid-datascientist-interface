@@ -72,7 +72,7 @@ Ensure you have the following installed on your system:
      yarn dev
      ```
 
-   This command will start a local development server. By default, the app runs at `http://localhost:5173/`.
+   This command will start a local development server. the application will be available at `http://localhost:9002/`.
 
 ---
 

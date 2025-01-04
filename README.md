@@ -1,8 +1,8 @@
-# React Page Installation Guide
+# FLIPKART GRID DATASCIENTIST INTERFACE
 
 ## Overview
 
-This guide will help you install and run frontend of project locally. Follow the steps below to set up your environment and start the application.
+This guide will help you install and run the interface for data scientists. Follow the steps below to set up your environment and start the application.
 
 ---
 
@@ -31,20 +31,16 @@ Ensure you have the following installed on your system:
    Clone the repository to your local machine using Git:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/heyronjmilton/flipkart-grid-datascientist-interface.git
    ```
-
-   Replace `<repository-url>` with the actual URL of the repository.
 
 2. **Navigate to the Project Directory**
 
    Move into the project's directory:
 
    ```bash
-   cd <project-folder>
+   cd flipkart-grid-datascientist-interface
    ```
-
-   Replace `<project-folder>` with the directory name of your cloned project.
 
 3. **Install Dependencies**
 
@@ -72,80 +68,40 @@ Ensure you have the following installed on your system:
      yarn dev
      ```
 
-   This command will start a local development server. the application will be available at `http://localhost:9002/`.
+   This command will start a local development server. The application will be available at `http://localhost:9002/`.
 
 ---
 
-## Build for Production
+## Application Features
 
-To create an optimized production build of the application, run:
+### Add New Class
 
-- Using npm:
-  ```bash
-  npm run build
-  ```
-- OR using Yarn:
-  ```bash
-  yarn build
-  ```
+The **Add New Class** feature allows data scientists to add new items to the dataset by uploading a video of the object. The uploaded video is processed to extract relevant frames, and new dataset entries are created based on the objects detected in the video.
 
-This will generate a `dist` directory containing the production-ready files.
+### Dataset Analysis
 
----
+The **Dataset Analysis** section provides a detailed view of the dataset:
 
-## Preview Production Build
+- **Preview of Latest Ingested Frames**: Displays the most recently processed frames from the video uploaded via the "Add New Class" feature.
+- **Dataset Statistics**: Includes a table that shows each class in the dataset along with their respective counts.
 
-To preview the production build locally:
+### Data Review
 
-- Using npm:
-  ```bash
-  npm run preview
-  ```
-- OR using Yarn:
-  ```bash
-  yarn preview
-  ```
+The **Data Review** feature helps data scientists:
+
+- Review the inferenced images collected from each device.
+- Analyze these images to identify patterns or issues.
+- Use this reviewed data for retraining the models, ensuring continuous improvement of model performance.
 
 ---
 
-## Additional Scripts
+## Usage Instructions
 
-Here are some additional scripts you can run:
-
-- **Lint the Code:**
-  ```bash
-  npm run lint
-  ```
-  OR
-  ```bash
-  yarn lint
-  ```
-
----
-
-## Troubleshooting
-
-If you encounter issues during installation or setup, consider the following steps:
-
-1. Ensure you have the latest version of Node.js and npm/yarn installed.
-2. Delete the `node_modules` folder and reinstall dependencies:
-   ```bash
-   rm -rf node_modules
-   npm install
-   ```
-   OR
-   ```bash
-   rm -rf node_modules
-   yarn install
-   ```
-3. Clear npm/yarn cache:
-   - For npm:
-     ```bash
-     npm cache clean --force
-     ```
-   - For Yarn:
-     ```bash
-     yarn cache clean
-     ```
+1. Launch the application by starting the development server.
+2. Navigate to the desired feature from the navigation bar:
+   - **Add New Class**: Upload a video of the object to add new items to the dataset.
+   - **Dataset Analysis**: View the latest ingested frames and dataset statistics.
+   - **Data Review**: Review inferenced images collected from devices.
+3. Utilize the insights gained from each section to refine your dataset and retrain models as needed.
 
 ---
